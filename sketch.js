@@ -9,56 +9,64 @@ let shadowWidth = 120;
 let togglee = true;
 let toggle = true;
 let bbody = [];
+let sketchStarted = false;
+
 
 function setup(){
   let cnv = createCanvas(400,400);
+
+  createButton("start").mousePressed(startSketch);
   mic = new p5.AudioIn();
   mic.start();
-
-  
-  
+  sketchStarted = true;
   angleMode(DEGREES);
-  
-  
+
+
    for(let i = 0; i<=2;i++){
    bbody[i] = new ghostBody(random(width*0.9),random( height*0.7),random(360),random(6)/10,random(1,4));
    }
 }
 
+function startSketch(){
+  console.log('start sketch!');
+}
 
 function draw(){
-  
-  micLevel = mic.getLevel();
-  
-  c1 = color(0);
-  c2 = color(255, 153, 0);
-    for(let y=0; y<height; y++){
-    n = map(y,0,height,0,1);
-    let newc = lerpColor(c1,c2,n);
-    stroke(newc);
-    line(0,y,width, y);
+  if(sketchStarted){
+    micLevel = mic.getLevel();
+
+    c1 = color(0);
+    c2 = color(255, 153, 0);
+      for(let y=0; y<height; y++){
+      n = map(y,0,height,0,1);
+      let newc = lerpColor(c1,c2,n);
+      stroke(newc);
+      line(0,y,width, y);
+    }
+
+    for(let i = 0; i < bbody.length; i++){
+     bbody[i].display();
+     bbody[i].move();
+     }
+
+    body();
+    eyes();
+    whiteeye();
+    mouth();
+    black();
+    hand(10,10);
+    hand(-80,60);
+
+   if (count<360){
+      count--
+    }else if (count==360){count = 0};
+
+    angle = angle + 2;
+    // console.log(mouseX,mouseY);
+    // console.log(micLevel);
+
   }
-  
-  for(let i = 0; i < bbody.length; i++){
-   bbody[i].display();
-   bbody[i].move();
-   }
-  
-  body();
-  eyes();
-  whiteeye();
-  mouth(); 
-  black();
-  hand(10,10);
-  hand(-80,60);
-  
- if (count<360){
-    count--
-  }else if (count==360){count = 0};
-  
-  angle = angle + 2;
-  // console.log(mouseX,mouseY);
-  // console.log(micLevel);
+
 }
 
 function whiteeye(){
@@ -70,7 +78,7 @@ function whiteeye(){
   //translate(width*.4, height*.4);
   ellipse(posX, posY, 10, 10);
   pop();
-  
+
   push();
   stroke(255,255,255);
   posX = constrain(mouseX,235,250);
@@ -102,11 +110,11 @@ function mouth(){
 
 
 function black(){
-  
+
   if (togglee == true){
       shadowWidth = shadowWidth + 0.3
       } else if(togglee == false){
-    shadowWidth = shadowWidth - 0.3    
+    shadowWidth = shadowWidth - 0.3
       }
 
   if (shadowWidth > 180 || shadowWidth < 120){
@@ -118,25 +126,25 @@ function black(){
     console.log('false!')
   }
 
-  
+
   push();
   fill(100);
   noStroke();
   ellipse(width*0.55, height*0.88, shadowWidth, height*0.04);
   pop();
-  
-  
-  
+
+
+
 }
 
 function body(){
-  
+
   if (toggle == true){
       vertexY = vertexY + 0.1
       vertexY2 = vertexY2 + 0.1
       } else if(toggle == false){
       vertexY = vertexY - 0.1
-      vertexY2 = vertexY2 - 0.1    
+      vertexY2 = vertexY2 - 0.1
       }
   //console.log(vertexY)
 
@@ -156,14 +164,14 @@ function body(){
   curveVertex(width*0.3, height*0.7);
   curveVertex(width*0.36, height*0.25);
   curveVertex(width*0.48, height*0.13);
-  curveVertex(width*0.6, height*0.14); 
-  curveVertex(width*0.7, height*0.25); 
+  curveVertex(width*0.6, height*0.14);
+  curveVertex(width*0.7, height*0.25);
   curveVertex(width*0.78, height*0.64);
   curveVertex(width*0.8, vertexY);
   curveVertex(width*0.56, vertexY2);
   endShape(CLOSE);
   pop();
-  
+
 
 
 }
@@ -172,7 +180,7 @@ function hand(x,y){
   push();
   translate(width*.38, height*.55)
   rotate(210);
-  
+
   translate(0,0);
   stroke(10);
   strokeWeight(2);
