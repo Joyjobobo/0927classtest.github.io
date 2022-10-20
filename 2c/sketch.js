@@ -49,7 +49,7 @@ function setup() {
   button.mousePressed(buttonPressed);
 
   console.log(trolls);
-  frameRate(8);
+  frameRate(5);
 
 
 }
