@@ -7,11 +7,15 @@
 
     /*========== Colors 主题色彩==========*/
     /* Change favorite color */
-    --hue-color: 25; 
+    --hue-color: 250; /*Purple 250 - Green 142 - Blue 230 - Pink 340*/
+
+/*========== Colors 主题色彩==========*/
+    /* Change favorite color */
+    --hue-color: 28; /*Purple 250 - Green 142 - Blue 230 - Pink 340*/
 
     /* HSL color mode */
-    --first-color: hsl(var(--hue-color), 98%, 51%);
-    --first-color-second: hsl(76, 50%, 44%);
+    --first-color: hsl(var(--hue-color), 100%, 50%);
+    --first-color-second: hsl(var(--hue-color), 69%, 61%);
     --first-color-alt: hsl(var(--hue-color), 57%, 53%);
     --first-color-lighter: hsl(var(--hue-color), 92%, 85%);
     --title-color: hsl(var(--hue-color), 8%, 15%);
@@ -19,10 +23,9 @@
     --text-color-light: hsl(var(--hue-color), 8%, 65%);
     --input-color: hsl(var(--hue-color), 70%, 96%);
     --body-color: hsl(var(--hue-color), 60%, 99%);
+    --container-color: hsl(var(--hue-color), 100%, 98%);
     --scroll-bar-color: hsl(var(--hue-color), 12%, 90%);
     --scroll-thumb-color: hsl(var(--hue-color), 12%, 80%);
-    --container-color: hsl(var(--hue-color), 98%, 51%);
-
     /*========== Font and typography ==========*/
     --body-font: 'Poppins', sans-serif;
 
