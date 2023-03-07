@@ -26,15 +26,15 @@
     "qualification__subtitle":"My personal journey",
     "education":"Education",
     "work":"Work",
-    "qualification1__title":"Computer Enginner",
-    "qualification1__subtitle":"**** - University",
-    "qualification2__title":"Web Design",
-    "qualification2__subtitle":"Self-Study",
-    "qualification3__title":"Web Development",
-    "qualification3__subtitle":"Self-Study",
+    "qualification1__title":"A.A. Theater Designer",
+    "qualification1__subtitle":"Ohlone College",
+    "qualification2__title":"B.A. Theater Designer",
+    "qualification2__subtitle":"University of California, Irvine",
+    "qualification3__title":"M.F.A. Digital Media Artt",
+    "qualification3__subtitle":"San José State University",
 
-    "qualification4__title":"Software Enginner",
-    "qualification4__subtitle":"ShenZhen",
+    "qualification4__title":"Graphic Desinger",
+    "qualification4__subtitle":"CJ ENM",
 
     "portfolio__title":"Portfolio",
     "portfolio__subtitle":"Most recent works",
@@ -47,9 +47,9 @@
     "contact__title":"Contact me",
     "contact__subtitle":"Get in touch",
     "tel":"Call me",
-    "tel__number":"166********",
+    "tel__number":"1(408)334-2668",
     "email":"E-mail",
-    "email__address":"asoutherncat@gmail.com",
+    "email__address":"joyjobobo@gmail.com",
     "location":"Location",
-    "location__detail":"HuNan , CHN"
+    "location__detail":"Bay Area, California"
 }

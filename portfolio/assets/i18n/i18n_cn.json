@@ -27,14 +27,14 @@
     "qualification__subtitle":"个人履历",
     "education":"教育",
     "work":"工作",
-    "qualification1__title":"计算机科学与技术",
-    "qualification1__subtitle":"**大学",
-    "qualification2__title":"网页设计",
-    "qualification2__subtitle":"自学",
-    "qualification3__title":"网站开发",
-    "qualification3__subtitle":"自学",
-    "qualification4__title":"软件工程师",
-    "qualification4__subtitle":"深圳",
+    "qualification1__title":"舞台美术",
+    "qualification1__subtitle":"Ohlone College",
+    "qualification2__title":"本科：舞台美术",
+    "qualification2__subtitle":"加州大学尔湾分校",
+    "qualification3__title":"研究生：数字媒体艺术",
+    "qualification3__subtitle":"圣荷西州立大学",
+    "qualification4__title":"平面设计师",
+    "qualification4__subtitle":"CJ ENM",
 
     "portfolio__title":"项目集",
     "portfolio__subtitle":"近期项目",
@@ -48,10 +48,10 @@
     "contact__title":"联系方式",
     "contact__subtitle":"与我联系",
     "tel":"电话",
-    "tel__number":"166********",
+    "tel__number":"1(408)334-2668",
     "email":"电子邮箱",
-    "email__address":"asoutherncat@gmail.com",
+    "email__address":"joyjobobo@gmail.com",
     "location":"位置",
-    "location__detail":"湖南省"
+    "location__detail":"加州湾区"
     
 }
