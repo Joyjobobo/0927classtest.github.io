@@ -161,11 +161,11 @@ img {
 
 .nav{
   background-color: #ed4b40;
-  padding: 0px;
+  min-width: 768px;
   max-width: 1968px;
   height: var(--header-height);
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
 }
 
@@ -245,11 +245,11 @@ img {
   bottom: .5rem;
   font-size: 1.5rem;
   cursor: pointer;
-  color: var(--first-color);
+  color: #fed27a;
 }
 
 .nav__close:hover{
-  color: var(--first-color-alt);
+  color: #ffffff;
 }
 /* show menu */
 .show-menu{

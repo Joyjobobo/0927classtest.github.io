@@ -5,7 +5,7 @@
     "portfolio":"项目集",
     "contact":"联系方式",
     "home__title":"Hi, I'm Josie",
-    "home__subtitle":"多媒体设计师",
+
     "home__description":"积极进取的艺术学生，寻求利用目前的教育来获得设计领域的专业经验。",
     "home__contact":"与我联系",
     "home__scroll-name":"往下滑",
@@ -23,7 +23,7 @@
     "skills__title2":"后端开发",
     "skills__years2":"*年工作经验",
 
-    "qualification__title":"资历",
+
     "qualification__subtitle":"个人履历",
     "education":"教育",
     "work":"工作",
@@ -36,7 +36,7 @@
     "qualification4__title":"平面设计师",
     "qualification4__subtitle":"CJ ENM",
 
-    "portfolio__title":"项目集",
+
     "portfolio__subtitle":"近期项目",
     "portfolio1__title":"网站1",
     "portfolio1__description":"网站采用响应式布局，适配于多种设备，具有UI组件和动画交互。",
