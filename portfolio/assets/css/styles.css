@@ -172,6 +172,7 @@ img {
 .nav__toggle{
   color: #FED817;
   font-weight: var(--font-medium);
+
 }
 .nav__logo:hover{
   color: #ffffff;
