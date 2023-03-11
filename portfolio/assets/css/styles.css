@@ -161,6 +161,7 @@ img {
 
 .nav{
   background-color: #ed4b40;
+  padding: 0px;
   max-width: 1968px;
   height: var(--header-height);
   display: flex;
@@ -170,6 +171,7 @@ img {
 
 .nav__logo,
 .nav__toggle{
+  padding: 15px;
   color: #FED817;
   font-weight: var(--font-medium);
 
