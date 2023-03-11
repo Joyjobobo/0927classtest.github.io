@@ -76,24 +76,6 @@
 
 
 
-/*========== Button Dark/Light ==========*/
-.nav__btns {
-  display: flex;
-  align-items: center;
-
-}
-
-.change-theme {
-  font-size: 1.25rem;
-  color: var(--title-color);
-  margin-right: var(--mb-1);
-  cursor: pointer;
-}
-
-.change-theme:hover {
-  color: var(--first-color);
-}
-
 /*==================== BASE ====================*/
 * {
   box-sizing: border-box;
@@ -155,6 +137,7 @@ img {
 
 /*==================== LAYOUT ====================*/
 .container {
+
   max-width: 768px;
   margin-left: var(--mb-1-5);
   margin-right: var(--mb-1-5);
@@ -175,22 +158,23 @@ img {
 }
 
 /*==================== NAV ====================*/
-.nav{
 
-  max-width: 968px;
+.nav{
+  background-color: #ed4b40;
+  max-width: 1968px;
   height: var(--header-height);
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 }
 
 .nav__logo,
 .nav__toggle{
-  color: var(--title-color);
+  color: #FED817;
   font-weight: var(--font-medium);
 }
 .nav__logo:hover{
-  color: var(--first-color);
+  color: #ffffff;
 }
 
 .nav__toggle{
@@ -199,7 +183,7 @@ img {
 }
 
 .nav__toggle:hover{
-  color: var(--first-color);
+  color: #ffffff;
 }
 
 /*mobile devices*/
@@ -209,7 +193,7 @@ img {
     bottom: -100%;
     left: 0;
     width: 100%;
-    background-color: var(--body-color);
+    background-color: var(--first-color);
     padding: 2rem 1.5rem 4rem;
     box-shadow: 0 -1px 4px rgba(0,0,0,.15);
     border-radius: 1.5rem 1.5rem 0 0;
@@ -230,24 +214,24 @@ img {
   flex-direction: column;
   align-items: center;
   font-size: var(--small-font-size);
-  color: var(--title-color);
+  color: #fed27a;
   font-weight: var(--font-medium);
   cursor: pointer;
   text-transform: capitalize;
 }
 
 .nav__link:hover{
-  color: var(--first-color);
+  color: #ffffff;
 }
 .nav__link:hover svg{
-  fill: var(--first-color);
+  fill: #ffffff;
 }
 
 .nav__icon{
   font-size: 1.2rem;
 }
 .nav__icon-svg{
-  fill:var(--title-color);
+  fill:#fed27a;
   font-size: 1.4rem;
   margin-top: 4px;
   margin-bottom: 2px;
@@ -271,7 +255,7 @@ img {
 
 /* Active link */
 .active-link {
-  color: var(--first-color);
+  color: #ffffff;
 }
 
 /* Change background header */
@@ -324,7 +308,7 @@ img {
 
 .home__subtitle {
   font-size: var(--h3-font-size);
-  color: var(--text-color);
+  color: var(--first-color);
   font-weight: var(--font-medium);
   margin-bottom: var(--mb-0-75);
 }
