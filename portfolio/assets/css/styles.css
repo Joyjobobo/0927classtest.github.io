@@ -12,15 +12,14 @@
 
 /*========== Colors 主题色彩==========*/
     /* Change favorite color */
-    --hue-color: 28; /*Purple 250 - Green 142 - Blue 230 - Pink 340*/
-    --hue-background-color:hsl(40, 99%, 74%);
+    --hue-color: 4; /*Purple 250 - Green 142 - Blue 230 - Pink 340*/
 
     /* HSL color mode */
-    --first-color: hsl(var(--hue-color), 100%, 50%);
-    --first-color-second: hsl(76, 50%, 44%);
+    --first-color: hsl(var(--hue-color), 83%, 59%);
+    --first-color-second: hsl(4, 83%, 59%);
     --first-color-alt: hsl(var(--hue-color), 57%, 53%);
     --first-color-lighter: hsl(var(--hue-color), 92%, 85%);
-    --title-color: hsl(var(--hue-color), 8%, 15%);
+    --title-color: hsl(var(--hue-color), 83%, 59%);
     --text-color: hsl(var(--hue-color), 8%, 45%);
     --text-color-light: hsl(var(--hue-color), 8%, 65%);
     --input-color: hsl(var(--hue-color), 70%, 96%);
@@ -110,7 +109,7 @@ body {
   margin: 0 0 var(--header-height) 0;
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
-  background-color: var(--body-color);
+  background-color:#FED817;
   color: var(--text-color);
 }
 
@@ -177,6 +176,7 @@ img {
 
 /*==================== NAV ====================*/
 .nav{
+
   max-width: 968px;
   height: var(--header-height);
   display: flex;
