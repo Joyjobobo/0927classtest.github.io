@@ -1,6 +1,6 @@
 /*==================== GOOGLE FONTS 字体====================*/
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
-
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 .body {
   background-color: #fed27a;
 
@@ -29,6 +29,7 @@
     --scroll-bar-color: hsl(var(--hue-color), 12%, 90%);
     --scroll-thumb-color: hsl(var(--hue-color), 12%, 80%);
     /*========== Font and typography ==========*/
+
     --body-font: 'Poppins', sans-serif;
 
     /* .5rem = 8px, 1rem = 16px, 1.5rem = 24px ... */
@@ -114,6 +115,7 @@ body {
 }
 
 h1, h2, h3, h4 {
+  font-family: 'Pacifico', cursive;
   color: var(--title-color);
   font-weight: var(--font-semi-bold);
 }
