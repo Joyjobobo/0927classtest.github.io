@@ -95,12 +95,17 @@ body {
   color: var(--text-color);
 }
 
-h1, h2, h3, h4 {
+h1, h2, h3 {
   font-family: 'Pacifico', cursive;
   color: var(--title-color);
   font-weight: var(--font-semi-bold);
 }
+h4 {
+  font-family: var(--body-font);
+  color: var(--title-color);
+  font-weight: var(--font-semi-bold);
 
+}
 ul {
   list-style: none;
 }
