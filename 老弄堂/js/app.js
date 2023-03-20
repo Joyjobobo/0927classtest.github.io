@@ -237,7 +237,7 @@ function createControls() {
 function createObjects() {
   const loader = new THREE.GLTFLoader()
   loader.load(
-    'model/gallery.glb',
+    'model/shanghaiposition.glb',
     gltf => {
       gltf.scene.traverse(child => {
         switch(child.name) {
