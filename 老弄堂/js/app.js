@@ -179,30 +179,6 @@ function createLights() {
   pointLight1.position.set(-2, 3, 2)
 
   scene.add(pointLight1)
-
-  pointLight2 = new THREE.PointLight(0xe0ffff, 0.1, 20) 
-  pointLight2.position.set(0, 3, -6)
-  scene.add(pointLight2)
-
-  pointLight3 = new THREE.PointLight(0xe0ffff, 0.1, 20) 
-  pointLight3.position.set(-12, 3, 6)
-  scene.add(pointLight3)
-
-  pointLight4 = new THREE.PointLight(0xe0ffff, 0.1, 20) 
-  pointLight4.position.set(-12, 4, -4)
-  scene.add(pointLight4)
-
-  pointLight5 = new THREE.PointLight(0xe0ffff, 0.1, 20) 
-  pointLight5.position.set(12, 4, -8)
-  scene.add(pointLight5)
-
-  pointLight6 = new THREE.PointLight(0xe0ffff, 0.1, 20) 
-  pointLight6.position.set(12, 4, 0)
-  scene.add(pointLight6)
-
-  pointLight7 = new THREE.PointLight(0xe0ffff, 0.1, 20) 
-  pointLight7.position.set(12, 4, 8)
-  scene.add(pointLight7)
 }
 
 function createLightHelpers() {
@@ -210,23 +186,6 @@ function createLightHelpers() {
   const pointLightHelper1 = new THREE.PointLightHelper(pointLight1, 1)
   scene.add(pointLightHelper1)
 
-  const pointLightHelper2 = new THREE.PointLightHelper(pointLight2, 1)
-  scene.add(pointLightHelper2)
-
-  const pointLightHelper3 = new THREE.PointLightHelper(pointLight3, 1)
-  scene.add(pointLightHelper3)
-
-  const pointLightHelper4 = new THREE.PointLightHelper(pointLight4, 1)
-  scene.add(pointLightHelper4)
-
-  const pointLightHelper5 = new THREE.PointLightHelper(pointLight5, 1)
-  scene.add(pointLightHelper5)
-
-  const pointLightHelper6 = new THREE.PointLightHelper(pointLight6, 1)
-  scene.add(pointLightHelper6)
-
-  const pointLightHelper7 = new THREE.PointLightHelper(pointLight7, 1)
-  scene.add(pointLightHelper7)
 }
 
 function createControls() {
@@ -244,48 +203,14 @@ function createObjects() {
           case 'walls':
             initWalls(child)
             break
-          case 'stairs':
-            initStairs(child)
-            break
         }
-        //设置展画边框贴图
-        if(child.name.includes('paint')) {
-          initFrames(child)
-        }
-        //设置展画图片贴图
-        if(child.name.includes('draw')) {
-          initDraws(child)
-        }
+
       })
       scene.add(gltf.scene)
     }
   )
 }
 
-function initDraws(child) {
-  const index = child.name.split('draw')[1]
-  const texture =  new THREE.TextureLoader().load(`img/${index}.jpg`)
-  texture.encoding = THREE.sRGBEncoding
-  texture.flipY = false
-  const material = new THREE.MeshPhongMaterial({
-    map: texture
-  })
-  child.material = material
-}
-
-function initFrames(child) {
-  child.material = new THREE.MeshBasicMaterial({
-    color: 0x7f5816
-  })
-}
-
-function initStairs(child) {
-  child.material = new THREE.MeshStandardMaterial({
-    color: 0xd1cdb7
-  })
-  child.material.roughness = 0.5
-  child.material.metalness = 0.6
-}
 
 function initWalls(child) {
   child.material = new THREE.MeshStandardMaterial({
@@ -312,7 +237,7 @@ function render() {
   update(dt)
   renderer.render(scene, camera)
   window.requestAnimationFrame(render)
-  scene.add(light);
+
 }
 
 function update(dt) {
