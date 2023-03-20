@@ -661,6 +661,13 @@ img {
 .portfolio__description {
   margin-bottom: var(--mb-0-75);
 }
+.home_3d_title {
+  font-size: var(--big-font-size);
+}
+
+.home_3d_description {
+  margin-bottom: var(--mb-0-75);
+}
 
 .portfolio__button:hover .button__icon {
   transform: translateX(.25rem);

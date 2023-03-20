@@ -38,8 +38,10 @@
 
     "portfolio__title":"Portfolio",
     "portfolio__subtitle":"Most recent works",
-    "portfolio1__title":"Modern Website 1",
-    "portfolio1__description":"Website adaptable to all devices, with ui components and animated interactions.",
+    "portfolio1__title":"3D Modeling",
+    "portfolio1__description":"Collection of 3D models showcasing my work.",
+    "home_3d_title":"Playground",
+    "home_3d_description":"This is a 3D model depicting a little girl swinging on a playground in autumn. The model captures the joy and innocence of childhood, with the girl enjoying the evening sun and the slide as a backdrop.",
     "portfolio2__title":"Modern Website 2",
     "portfolio2__description":"Website adaptable to all devices, with ui components and animated interactions.",
     "portfolio3__title":"Modern Website 3",
