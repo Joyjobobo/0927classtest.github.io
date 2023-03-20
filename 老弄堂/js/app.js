@@ -61,7 +61,7 @@ function createEvents() {
 function createColliders() {
   const loader = new THREE.GLTFLoader()
   loader.load(
-    '',
+    'model/collider.glb',
     gltf => {
       gltf.scene.traverse(child => {
         if(child.name.includes('collider')) {
