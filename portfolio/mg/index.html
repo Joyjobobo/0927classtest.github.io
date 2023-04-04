@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+    <!--==================== UNICONS 图标====================-->
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v3.0.6/css/line.css"
+    />
+    <!--==================== SWIPER CSS ====================-->
+    <link rel="stylesheet" href="../assets/css/swiper-bundle.min.css" />
+
+    <!--==================== CSS ====================-->
+    <link rel="stylesheet" href="../assets/css/styles.css" />
+    <!-- iconfont font class 方式引用图标 -->
+    <!-- <link
+      rel="stylesheet"
+      href="https://at.alicdn.com/t/c/font_3900458_82z46p85im.css"
+    /> -->
+
+    <title>Josie's Portfolio Website</title>
+  </head>
+
+
+  <body>
+
+    <!--==================== HEADER ====================-->
+    <header class="header scroll-header" id="header">
+      <nav class="nav container">
+        <a href="#" class="nav__logo">Joyjobobo</a>
+
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list grid">
+            <li class="nav__item">
+              <a href="/index.html" class="nav__link">
+                <i class="uil uil-estate nav__icon"></i>
+                <p i18n="home">Home</p>
+              </a>
+            </li>            
+            
+            <li class="nav__item">
+              <a href="/index.html" class="nav__link">
+                <i class="uil uil-user nav__icon"></i>
+                <p i18n="about">About</p>
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="/index.html" class="nav__link">
+                <i class="uil uil-file-alt nav__icon"></i>
+                <p i18n="skills">Skills</p>
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="/index.html" class="nav__link">
+                <i class="uil uil-scenery nav__icon"></i>
+                <p i18n="portfolio">Portfolio</p>
+              </a>
+            </li> 
+            <li class="nav__item">
+              <a href="#contact" class="nav__link">
+                <i class="uil uil-message nav__icon"></i>
+                <p i18n="contact">Contact me</p>
+              </a>
+            </li>
+            <!-- <li class="nav__item">
+              <div class="nav__link" id="translate" value="en">
+                <svg class="icon nav__icon-svg" aria-hidden="true">
+                  <use xlink:href="#icon-fanyi"></use>
+                </svg>
+                <a class="=nav__link" id="nav__translate">Translate</a>
+              </div>
+            </li> -->
+          </ul>
+          <i class="uil uil-times nav__close" id="nav-close"></i>
+        </div>
+
+        <div class="nav__btns">
+          <div class="nav__toggle" id="nav-toggle">
+            <i class="uil uil-apps"></i>
+          </div>
+        </div>
+      </nav>
+    </header>
+            <!--==================== PORTFOLIO 1 ====================-->
+            <section class="home section" id="home">
+                <div class="home__container container grid">
+                  <div class="home__content grid">
+                    <div class="home__social">
+        
+                     
+                    </div>
+        
+                    <div class="home__img">
+                        <video src="../assets/video/105 Final.mp4" width="640" height="360" controls></video>
+                        </g>
+                      </svg>
+                    </div>
+        
+                    <div class="home__data">
+                      <h1 class="home__title" i18n="home__title">
+                        Motion Graphics
+                      </h1>
+
+                      <p class="home__description" i18n="home__description">
+                        That uses animation, visual effects, music, and other multimedia elements to tell stories or convey information through dynamic changes on a timeline.
+                      </p>
+
+                    </div>
+                  </div>
+                  <div class="home__scroll">
+                    <a href="#about" class="home__scroll-button button--flex">
+                      <i class="uil uil-mouse-alt-2 home__scroll-mouse"></i>
+                      <span class="home__scroll-name" i18n="home__scroll-name"
+                        >Scroll down</span
+                      >
+                      <i class="uil uil-arrow-down home__scroll-arrow"></i>
+                    </a>
+                  </div>
+                  <div class="home__img">
+                    <video src="../assets/video/mg1.mp4" width="640" height="360" controls></video>
+                    </g>
+                  </svg>
+                </div>
+                </div>
+              </section>
+
+
+</body>
+      <!--==================== CONTACT ME ====================-->
+      <section class="contact section" id="contact">
+        <h2 class="section__title" i18n="contact__title">Contact me</h2>
+        <span class="section__subtitle" i18n="contact__subtitle"
+          >Get in touch</span
+        >
+
+        <div class="contact__container container grid">
+          <div>
+            <div class="contact__information">
+              <i class="uil uil-phone-alt contact__icon"></i>
+
+              <div>
+                <h4 class="contact__title" i18n="tel">Call me</h4>
+                <span class="contact__subtitle" i18n="tel__number"
+                  >1(408)334-2668</span
+                >
+              </div>
+            </div>
+
+            <div class="contact__information">
+              <i class="uil uil-envelope contact__icon"></i>
+
+              <div>
+                <h4 class="contact__title" i18n="email">E-mail</h4>
+                <span class="contatc__subtitle" i18n="email__address"
+                  >joyjobobo@gmail.com</span
+                >
+              </div>
+            </div>
+
+            <div class="contact__information">
+              <i class="uil uil-map-marker contact__icon"></i>
+
+              <div>
+                <h4 class="contact__title" i18n="location">Location</h4>
+                <span class="contatc__subtitle" i18n="location__detail"
+                  >Bay Area, California</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!--==================== FOOTER ====================-->
+    <footer class="footer">
+      <div class="footer__bg">
+        <div class="footer__container container grid">
+          <div>
+            <h1 class="footer__title">Joyjobobo</h1>
+            <span class="footer__subtitle" i18n="home__subtitle"
+              >Multimedia Designer</span
+            >
+          </div>
+      </div>
+    </footer>
+
+    <!--==================== SCROLL TOP ====================-->
+    <a href="#" class="scrollup" id="scroll-up">
+      <i class="uil uil-arrow-up scrollup__icon"></i>
+    </a>
+    <!--==================== SWIPER JS ====================-->
+    <script src="/assets/js/swiper-bundle.min.js"></script>
+
+    <!-- iconfont JS -->
+    <script src="/assets/js/iconfont.js"></script>
+    <!-- jquery -->
+    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="/assets/js/jquery.i18n.min.js"></script>
+    <!--==================== MAIN JS ====================-->
+    <script src="/assets/js/main.js"></script>
+
+    <!-- translate JS -->
+    <script src="/assets/js/cn-en-translate.js"></script>
+  </body>
+</html>
