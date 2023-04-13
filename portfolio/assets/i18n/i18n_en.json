@@ -38,6 +38,8 @@
 
     "portfolio__title":"Portfolio",
     "portfolio__subtitle":"Most recent works",
+    "portfolio0__title":"UIUX",
+    "portfolio0__description":"K-Pop Music Application.",
     "portfolio1__title":"3D Modeling",
     "portfolio1__description":"Collection of 3D models showcasing my work.",
     "home_3d_title":"Playground",
